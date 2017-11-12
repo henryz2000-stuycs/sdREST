@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-  
+
   <head>
-    <title> {{ title }}</title>
+    <title>API Testing</title>
   </head>
 
   {% block body %}
@@ -10,16 +10,15 @@
 
     <center>
 
-      <h1>{{ title }}</h1>
-      <h3>{{ date }}</h3>
-      <h2>{{ copyright }}</h2>
+      <form>
+	<input type="submit" formaction="/nasa" value="NASA API">
+	<br>
+	<input type="submit" formaction="/weather" value="OpenWeatherMap API">
+      </form>
 
-      <img src={{ hdurl }}>{{ title }}</img>
-      {{ explanation }}
-      
     </center>
-    
+
   </body>
   {% endblock %}
-  
+
 </html>

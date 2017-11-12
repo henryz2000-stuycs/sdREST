@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Weather for {{ name }}</title>
+  </head>
+
+  {% block body %}
+  <body>
+
+    <center>
+
+      <h1>City: {{ name }}</h1>
+
+      <h3>Description: {{ description }}</h3>
+      <h3>Temperature (°F): {{ temp }}</h3>
+
+      <form action="/">
+	<input type="submit" value="Choose another API!">
+      </form>
+
+    </center>
+    
+  </body>
+  {% endblock %}
+  
+</html>
